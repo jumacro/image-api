@@ -60,3 +60,6 @@ public/uploads
 # env directory
 
 env
+/package-lock.json
+/yarn.lock
+/test-files/
