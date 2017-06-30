@@ -63,7 +63,7 @@ if (config.env === 'development') {
   }));
 }
 
-app.use(express.static('public'));
+app.use(express.static('public/uploads'));
 
 // mount all routes on / path
 // app.use(`/${config.apiVersion}`, routes);

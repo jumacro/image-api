@@ -19,4 +19,4 @@ if (!module.parent) {
   });
 }
 
-// export default app;
+export default app;
