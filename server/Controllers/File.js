@@ -15,16 +15,6 @@ function postImage(req, res, next) {
   console.log(req);
   form.on('file', (filename, file) => {
     debug(file);
-
-    /*
-    fs.existsSync(dir + file.originalFilename, function (exist) {
-      console.log(exist);
-    });
-
-    fs.renameSync(file.path, dir + file.originalFilename, function(err) {
-      if(err) console.error(err.stack);
-    });
-    */
   });
 
   // HANDLE FORM ERROR
@@ -54,6 +44,7 @@ function postImage(req, res, next) {
     }
 
     if(validationErrors.length > 0) {
+      fs.unlink(files.filename[0].path);
       return res.status(400).json(new ResponseObject(400, validationErrors));
     }
 
