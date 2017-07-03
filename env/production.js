@@ -8,7 +8,7 @@ const prodConfig = {
     },
     api: {
       appId: 'image-api-rest',
-      appSecret: 'pDblTMZaFam59d@F9c#V1G9UEL17)Odz',
+      appSecret: 'N%dnrH+UW&&q#GGsG4#yw}r}pT]_=]',
     },
     tokenLife: 3600
   },
