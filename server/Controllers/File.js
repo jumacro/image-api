@@ -77,7 +77,7 @@ function postImage(req, res, next) {
 
     let resData = {
       imageUrl: fields.baseUrl+fields.projectName+"/"+fields.scope+"/"+fields.container+"/"+files.filename[0].originalFilename,
-      file: files.filename[0]
+      //file: files.filename[0]
     };
 
     res.status(200).json(new ResponseObject(200, resData));
