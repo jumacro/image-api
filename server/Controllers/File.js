@@ -9,10 +9,7 @@ import ResponseObject from '../Helpers/ResponseObject';
 const debug = require('debug')('image-api-server:index');
 
 function postImage(req, res, next) {
-  const params = req.body;
-
   const form = new multiparty.Form({ autoFiles: true, uploadDir: 'public/uploads/' });
-  console.log(req);
   form.on('file', (filename, file) => {
     debug(file);
   });
